@@ -1,0 +1,12 @@
+###
+ # @Author: 唐王瑶
+ # @Email：tangwangyao@hualala.com
+ # @Date: 2022-04-22 16:48:39
+ # @Description: git hooks
+ # @FilePath: /git-hooks-tfz/.husky/_/commit-msg
+### 
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+yarn commitlint --edit $1
+

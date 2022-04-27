@@ -1,0 +1,11 @@
+###
+ # @Author: 唐王瑶
+ # @Email：tangwangyao@hualala.com
+ # @Date: 2022-04-22 16:53:47
+ # @Description: 页面/组件/功能的描述
+ # @FilePath: /git-hooks-tfz/.husky/pre-commit
+### 
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+npx lint-staged
